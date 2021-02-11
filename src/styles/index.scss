@@ -1,13 +1,57 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body{
+    background-image: url(https://images.unsplash.com/photo-1609511871579-076778953064?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: gray;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.jugadores{
+    padding: 30px;
+    margin: 150px 85px 0px 85px;
+    border-radius: 15px 50px;
 
-*/
+}
+
+h1, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+.square {
+  background: rgb(235, 233, 233);
+  border: 1px solid peru;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 150px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 150px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.superboard{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
